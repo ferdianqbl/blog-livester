@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -40,4 +41,29 @@ nav.navbar#my-navbar ul.navbar-nav li.nav-item a.nav-link:hover {
 nav.navbar#my-navbar ul.navbar-nav li.nav-item a.nav-link.active {
   font-weight: 500;
   color: #00ECFF;
+}
+
+footer {
+  margin-top: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: #152C5B;
+  border-top: 1px solid #00ECFF;
+}
+footer .footer-heading {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+footer a.footer-link {
+  font-size: 1.5rem;
+  color: #FFF;
+}
+footer a.footer-link:hover {
+  color: #00ECFF;
+}
+footer p.footer-cop {
+  margin-top: 2rem;
+  color: #FFF;
 }/*# sourceMappingURL=frontend.css.map */

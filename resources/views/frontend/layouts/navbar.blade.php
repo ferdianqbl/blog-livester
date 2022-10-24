@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg p-0 fixed-top" id="my-navbar">
+<nav class="navbar navbar-expand-lg p-0 " id="my-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
       BL
