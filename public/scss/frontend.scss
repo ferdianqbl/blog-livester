@@ -141,7 +141,7 @@ footer {
 // ========== HOME ==========
 .home#home {
   section.hero#hero {
-    padding-top: 5rem;
+    padding-top: 8rem;
     padding-bottom: 5rem;
     background: $bg-primary;
 
@@ -216,6 +216,9 @@ footer {
     }
 
     .sub-content-card {
+      // border-bottom: 1px solid #001d58;
+      // padding-bottom: 1rem;
+
       img.sub-content-card-img {
         border-radius: 10px;
       }

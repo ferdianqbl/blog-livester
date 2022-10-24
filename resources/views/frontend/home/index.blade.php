@@ -13,7 +13,7 @@
 
       <div class="row justify-content-evenly align-items-start">
         <div class="col-md-5">
-          <div class="big-content-card-hero">
+          <div class="big-content-card-hero mb-5">
             <img src="/images/home/big-content.png" alt="" class="img-fluid">
 
             <div class="big-content-card-hero-body">
