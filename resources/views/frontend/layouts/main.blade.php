@@ -9,6 +9,9 @@
 
   {{-- Bootstrap --}}
   <link rel="stylesheet" href="/css/bootstrap.css">
+
+  {{-- Custom CSS --}}
+  <link rel="stylesheet" href="/css/frontend.css">
 </head>
 
 <body>

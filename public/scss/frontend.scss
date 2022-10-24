@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// variables
+$font-family: 'Poppins', sans-serif;
+
+$bg-primary: #152C5B;
+$text-primary: #DADADA;
+$text-secondary: #ABAB;
+$heading-primary: #FFFFFF;
+$blue-custom: #00ECFF;
+
+body {
+  font-family: $font-family;
+}
+
+// ========== NAVBAR ==========
+nav.navbar#my-navbar {
+  background: $bg-primary;
+  border-bottom: 1px solid $blue-custom;
+  padding: .25rem 0 !important;
+
+  a.navbar-brand {
+    font-weight: 900;
+    font-size: 2rem;
+    background: linear-gradient(119.91deg, #00ABFF 3.13%, #00ECFF 92.9%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  ul.navbar-nav {
+    li.nav-item {
+      a.nav-link {
+        color: $heading-primary;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+          color: $blue-custom;
+        }
+
+        &.active {
+          font-weight: 500;
+          color: $blue-custom;
+        }
+      }
+    }
+  }
+}

@@ -24,3 +24,15 @@ Route::get('/', function () {
         'title' => 'Home'
     ]);
 });
+
+Route::get('/author', function () {
+    return view('frontend.home.index', [
+        'title' => 'Author'
+    ]);
+});
+
+Route::get('/category', function () {
+    return view('frontend.home.index', [
+        'title' => 'category'
+    ]);
+});
