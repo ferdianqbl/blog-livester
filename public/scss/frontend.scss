@@ -13,11 +13,25 @@ body {
   font-family: $font-family;
 }
 
+a.btn-custom-primary {
+  background: linear-gradient(103.08deg, #00ECFF 15.1%, #00ABFF 82.81%);
+  border-radius: 100px;
+  padding: .5rem 1.25rem;
+  color: $heading-primary;
+  text-decoration: none;
+  transition: all .5s ease-in-out;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
 // ========== NAVBAR ==========
 nav.navbar#my-navbar {
   background: $bg-primary;
   border-bottom: 1px solid $blue-custom;
   padding: .25rem 0 !important;
+  transition: all .5s ease-in-out;
 
   a.navbar-brand {
     font-weight: 900;

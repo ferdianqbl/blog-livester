@@ -20,7 +20,7 @@
   @yield('container')
   @include('frontend.layouts.footer')
 
-  <script src="/js/bootstrap.js" defer></script>
+  <script src="/js/bootstrap.bundle.js" defer></script>
 </body>
 
 </html>

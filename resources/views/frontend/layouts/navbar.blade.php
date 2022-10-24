@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg p-0" id="my-navbar">
+<nav class="navbar navbar-expand-lg p-0 fixed-top" id="my-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
       BL
@@ -8,7 +8,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
         <li class="nav-item">
           <a class="nav-link{{Request::is('/') ? ' active' : '' }}" href="/">Home</a>
         </li>
@@ -18,7 +18,15 @@
         <li class="nav-item">
           <a class="nav-link{{Request::is('category') ? ' active' : '' }}" href="/category">Category</a>
         </li>
+        <li class="nav-item d-block d-lg-none">
+          <a class="btn-custom-primary d-inline-block d-lg-none" href="/">
+            Login
+          </a>
+        </li>
       </ul>
     </div>
+    <a class="btn-custom-primary d-none d-lg-inline-block" href="/">
+      Login
+    </a>
   </div>
 </nav>
