@@ -12,7 +12,7 @@
       </div>
 
       <div class="row justify-content-evenly align-items-start">
-        <div class="col-md-5">
+        <div class="col-lg-5">
           <div class="big-content-card-hero mb-5">
             <img src="/images/home/big-content.png" alt="" class="img-fluid">
 
@@ -34,7 +34,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6">
           <div class="sub-content-card mb-5">
             <div class="row align-items-start">
               <div class="col-4">
@@ -97,13 +97,13 @@
 
   <section class="author-choice" id="author-choice">
     <div class="container">
-      <div class="row justify-content-center align-items-center">
-        <div class="home-header-section-group d-flex justify-content-between align-items-center">
-          <h2 class="home-section-title">Author's Choice</h2>
-          <a href="/" class="btn-custom-primary">See All <i class="bi bi-arrow-right"></i></a>
-        </div>
-        <div class="col-md-3">
-          <div class="card-post">
+      <div class="home-header-section-group d-flex justify-content-between align-items-center">
+        <h2 class="home-section-title">Author's Choice</h2>
+        <a href="/" class="btn-custom-primary">See All <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="row justify-content-center align-items-center row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card h-100 card-post">
             <img src="/images/home/sub-content (3).png" alt="card-post" class="card-post-img img-fluid">
 
             <div class="card-post-body">
@@ -115,8 +115,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card-post">
+        <div class="col">
+          <div class="card h-100 card-post">
             <img src="/images/home/sub-content (3).png" alt="card-post" class="card-post-img img-fluid">
 
             <div class="card-post-body">
@@ -128,8 +128,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card-post">
+        <div class="col">
+          <div class="card h-100 card-post">
             <img src="/images/home/sub-content (3).png" alt="card-post" class="card-post-img img-fluid">
 
             <div class="card-post-body">
@@ -141,8 +141,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card-post">
+        <div class="col">
+          <div class="card h-100 card-post">
             <img src="/images/home/sub-content (3).png" alt="card-post" class="card-post-img img-fluid">
 
             <div class="card-post-body">
@@ -160,13 +160,13 @@
 
   <section class="home-category" id="home-category">
     <div class="container">
-      <div class="row justify-content-center align-items-center">
-        <div class="home-header-section-group d-flex justify-content-between align-items-center">
-          <h2 class="home-section-title">By Categories</h2>
-          <a href="/" class="btn-custom-primary">See All <i class="bi bi-arrow-right"></i></a>
-        </div>
-        <div class="col-md-3">
-          <div class="card-post">
+      <div class="home-header-section-group d-flex justify-content-between align-items-center">
+        <h2 class="home-section-title">By Categories</h2>
+        <a href="/" class="btn-custom-primary">See All <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="row justify-content-center align-items-center row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card h-100 card-post">
             <img src="/images/home/sub-content (3).png" alt="card-post" class="card-post-img img-fluid">
 
             <div class="card-post-body">
@@ -178,8 +178,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card-post">
+        <div class="col">
+          <div class="card h-100 card-post">
             <img src="/images/home/sub-content (3).png" alt="card-post" class="card-post-img img-fluid">
 
             <div class="card-post-body">
@@ -191,8 +191,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card-post">
+        <div class="col">
+          <div class="card h-100 card-post">
             <img src="/images/home/sub-content (3).png" alt="card-post" class="card-post-img img-fluid">
 
             <div class="card-post-body">
@@ -204,8 +204,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card-post">
+        <div class="col">
+          <div class="card h-100 card-post">
             <img src="/images/home/sub-content (3).png" alt="card-post" class="card-post-img img-fluid">
 
             <div class="card-post-body">

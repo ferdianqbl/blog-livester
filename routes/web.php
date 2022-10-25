@@ -26,13 +26,13 @@ Route::get('/', function () {
 });
 
 Route::get('/author', function () {
-    return view('frontend.home.index', [
+    return view('frontend.author.index', [
         'title' => 'Author'
     ]);
 });
 
 Route::get('/category', function () {
-    return view('frontend.home.index', [
+    return view('frontend.category.index', [
         'title' => 'category'
     ]);
 });
