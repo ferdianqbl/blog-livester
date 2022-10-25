@@ -44,3 +44,17 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register.index');
 });
+
+
+// ======== BACKEND ========
+Route::get('/admin', function () {
+    return view('backend.dashboard.index', [
+        'title' => 'Dashboard'
+    ]);
+});
+
+Route::get('/admin/post', function () {
+    return view('backend.posts.index', [
+        'title' => 'Posts'
+    ]);
+});
