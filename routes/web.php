@@ -33,6 +33,6 @@ Route::get('/author', function () {
 
 Route::get('/category', function () {
     return view('frontend.category.index', [
-        'title' => 'category'
+        'title' => 'Category'
     ]);
 });
