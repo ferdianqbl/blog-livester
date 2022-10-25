@@ -13,7 +13,9 @@ a.btn-custom-primary {
   transition: all 0.5s ease-in-out;
 }
 a.btn-custom-primary:hover {
+  transform: translateY(-2px);
   opacity: 0.8;
+  box-shadow: 0 5px 50px rgba(0, 117, 141, 0.5);
 }
 
 .web-color {
@@ -50,6 +52,73 @@ a.btn-custom-primary:hover {
 }
 .ai-color:hover {
   color: #00C608;
+}
+
+.card-post {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  padding: 1rem;
+}
+.card-post:hover {
+  transform: scale(1.01) translateY(-5px);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.card-post img.card-post-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.card-post .card-post-body {
+  margin-top: 1rem;
+}
+.card-post .card-post-body p.card-post-author {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  color: rgba(170, 187, 170, 0.7333333333);
+}
+.card-post .card-post-body a.card-post-category {
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+  display: inline-block;
+  border-radius: 183px;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.card-post .card-post-body a.card-post-category:hover {
+  opacity: 0.8;
+}
+.card-post .card-post-body p.card-post-title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: #001339;
+}
+.card-post .card-post-body p.card-post-text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #a0a0a0;
+}
+.card-post .card-post-body a.card-post-link {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.card-post .card-post-body a.card-post-link:hover {
+  color: #00ECFF;
 }
 
 nav.navbar#my-navbar {
@@ -103,6 +172,17 @@ footer p.footer-cop {
   color: #FFF;
 }
 
+.home#home .home-header-section-group {
+  margin-bottom: 2.5rem;
+}
+.home#home .home-header-section-group h2.home-section-title {
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3.375rem;
+  color: #001339;
+}
 .home#home section.hero#hero {
   padding-top: 8rem;
   padding-bottom: 5rem;
@@ -152,11 +232,11 @@ footer p.footer-cop {
   color: #FFFFFF;
 }
 .home#home section.hero#hero .big-content-card-hero .big-content-card-hero-body p.big-content-card-text {
-  color: #DADADA;
+  color: #a0a0a0;
   margin-bottom: 0.75rem;
 }
 .home#home section.hero#hero .big-content-card-hero .big-content-card-hero-body a.big-content-card-link {
-  color: #DADADA;
+  color: #a0a0a0;
   transition: all 0.3s ease-in-out;
 }
 .home#home section.hero#hero .big-content-card-hero .big-content-card-hero-body a.big-content-card-link:hover {
@@ -191,9 +271,17 @@ footer p.footer-cop {
   color: #FFFFFF;
 }
 .home#home section.hero#hero .sub-content-card a.sub-content-card-link {
-  color: #DADADA;
+  color: #a0a0a0;
   transition: all 0.3s ease-in-out;
 }
 .home#home section.hero#hero .sub-content-card a.sub-content-card-link:hover {
   color: #00ECFF;
+}
+.home#home section.author-choice#author-choice {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+.home#home section.home-category#home-category {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
 }/*# sourceMappingURL=frontend.css.map */
