@@ -19,13 +19,13 @@
           <a class="nav-link{{Request::is('category') ? ' active' : '' }}" href="/category">Category</a>
         </li>
         <li class="nav-item d-block d-lg-none">
-          <a class="btn-custom-primary d-inline-block d-lg-none" href="/">
+          <a class="btn-custom-primary d-inline-block d-lg-none" href="/login">
             Login
           </a>
         </li>
       </ul>
     </div>
-    <a class="btn-custom-primary d-none d-lg-inline-block" href="/">
+    <a class="btn-custom-primary d-none d-lg-inline-block" href="/login">
       Login
     </a>
   </div>
