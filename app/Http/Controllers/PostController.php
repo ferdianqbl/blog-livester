@@ -14,7 +14,10 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        return view('backend.posts.index', [
+            'title' => 'Posts',
+            'posts' => Post::all(),
+        ]);
     }
 
     /**

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -56,8 +57,4 @@ Route::get('/editor', function () {
     ]);
 })->name('dashboard')->middleware('auth');
 
-// Route::resource('/editor/posts', function () {
-//     return view('backend.posts.index', [
-//         'title' => 'Posts'
-//     ]);
-// })->middleware('auth');
+Route::resource('/editor/posts', PostController::class)->middleware('auth');
