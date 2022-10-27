@@ -19,8 +19,9 @@
                   <div class="card-body card-post-body">
                     <h5 class="card-title">{{ $author->name }}</h5>
                     <p class="card-text"><small class="text-muted">{{ $author->username }}</small></p>
-                    <p class="card-text">{{ $author->posts->count() }}</p>
-                    <a href="/" class="nav-link card-post-link">More <i class="bi bi-arrow-right"></i></a>
+                    <p class="card-text">{{ $author->posts->count() }} Posts</p>
+                    <a href="/posts?author={{ $author->username }}" class="nav-link card-post-link">More <i
+                        class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>

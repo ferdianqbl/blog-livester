@@ -25,7 +25,7 @@
                   <p class="big-content-card-author">
                     {{ $posts[0]->user->username }} | {{ $posts[0]->created_at->diffForHumans() }}
                   </p>
-                  <a href="/"
+                  <a href="/posts?category={{ $posts[0]->category->id }}"
                     class="nav-link big-content-card-category {{ Str::lower($posts[0]->category->name) }}-color">
                     {{ Str::upper($posts[0]->category->name) }}
                   </a>
@@ -83,7 +83,7 @@
                         <p class="sub-content-card-author">
                           {{ $posts[$i]->user->username }} | {{ $posts[$i]->created_at->diffForHumans() }}
                         </p>
-                        <a href="/"
+                        <a href="/posts?category={{ $posts[$i]->category->id }}"
                           class="nav-link sub-content-card-category {{ Str::lower($posts[$i]->category->name) }}-color">
                           {{ Str::upper($posts[$i]->category->name) }}
                         </a>
@@ -187,7 +187,7 @@
                   <div class="card-post-body">
                     <p class="card-post-author">{{ $posts[0]->user->username }} |
                       {{ $posts[$i]->created_at->diffForHumans() }}</p>
-                    <a href="/"
+                    <a href="/posts?category={{ $posts[$i]->category->id }}"
                       class="nav-link card-post-category {{ Str::lower($posts[$i]->category->name) }}-color">{{ Str::upper($posts[$i]->category->name) }}</a>
                     <p class="card-post-title">{{ $posts[$i]->title }}</p>
                     <p class="card-post-text">{{ $posts[$i]->summary }}</p>
@@ -283,7 +283,7 @@
                 <div class="card-post-body">
                   <p class="card-post-author">{{ $posts[0]->user->username }} |
                     {{ $posts[$i]->created_at->diffForHumans() }}</p>
-                  <a href="/"
+                  <a href="/posts?category={{ $posts[$i]->category->id }}"
                     class="nav-link card-post-category {{ Str::lower($posts[$i]->category->name) }}-color">{{ Str::upper($posts[$i]->category->name) }}</a>
                   <p class="card-post-title">{{ $posts[$i]->title }}</p>
                   <p class="card-post-text">{{ $posts[$i]->summary }}</p>

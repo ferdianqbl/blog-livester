@@ -31,11 +31,21 @@ class FrontController extends Controller
             'title' => 'Category',
         ]);
     }
-    public function postsPage()
+    public function postsPage(Request $req)
     {
+
+        $title = "Posts List";
+
+        if ($req->category) {
+            $title = "Posts in " . Category::firstWhere('id', $req->category)->name;
+        } else if ($req->author) {
+            $title = "Posts by " . User::firstWhere('username', $req->author)->username;
+        }
+
         return view('frontend.posts.index', [
             'title' => 'Posts',
-            'posts' => Post::latest()->paginate(8)->withQueryString(),
+            'titleHeader' => $title,
+            'posts' => Post::filter($req)->latest()->paginate(8)->withQueryString(),
         ]);
     }
 

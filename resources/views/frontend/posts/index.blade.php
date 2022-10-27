@@ -4,7 +4,8 @@
   <div class="posts" id="posts">
     <section class="posts-list" id="posts-list">
       <div class="container">
-        <h2 class="posts-list-title">Posts List</h2>
+        <h2 class="posts-list-title">
+          {{ $titleHeader }}</h2>
 
         <div class="row justify-content-center mb-5">
           <div class="col-6">
@@ -42,7 +43,7 @@
                   @endif
                   <div class="card-post-body">
                     <p class="card-post-author">{{ $post->user->username }} | {{ $post->created_at->diffForHumans() }}</p>
-                    <a href="/"
+                    <a href="/posts?category={{ $post->category->id }}"
                       class="nav-link card-post-category {{ Str::lower($post->category->name) }}-color">{{ Str::upper($post->category->name) }}</a>
                     <p class="card-post-title">{{ $post->title }}</p>
                     <p class="card-post-text">{{ $post->summary }}</p>
