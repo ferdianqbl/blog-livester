@@ -187,6 +187,22 @@ nav.navbar#my-navbar {
       }
     }
   }
+
+  .dropdown {
+    a.nav-link {
+      color: $heading-primary;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        color: $blue-custom;
+      }
+
+      &.active {
+        font-weight: 500;
+        color: $blue-custom;
+      }
+    }
+  }
 }
 
 // ========== FOOTER ==========

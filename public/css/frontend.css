@@ -147,6 +147,17 @@ nav.navbar#my-navbar ul.navbar-nav li.nav-item a.nav-link.active {
   font-weight: 500;
   color: #00ECFF;
 }
+nav.navbar#my-navbar .dropdown a.nav-link {
+  color: #FFFFFF;
+  transition: all 0.3s ease-in-out;
+}
+nav.navbar#my-navbar .dropdown a.nav-link:hover {
+  color: #00ECFF;
+}
+nav.navbar#my-navbar .dropdown a.nav-link.active {
+  font-weight: 500;
+  color: #00ECFF;
+}
 
 footer {
   padding-top: 5rem;

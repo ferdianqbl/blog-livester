@@ -27,7 +27,7 @@ class UserController extends Controller
         if (Auth::attempt($validateData)) {
             $request->session()->regenerate();
 
-            return redirect()->intended('dashboard');
+            return redirect()->intended('/');
         }
 
         return back()->with([
