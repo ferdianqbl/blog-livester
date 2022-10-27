@@ -69,7 +69,6 @@ class PostController extends Controller
             'body' => ['required', 'min:3'],
         ];
 
-        // validasi
         $validatedData = $request->validate($rules);
 
         if ($request->file('image')) {

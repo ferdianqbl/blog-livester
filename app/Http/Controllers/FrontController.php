@@ -37,9 +37,9 @@ class FrontController extends Controller
         $title = "Posts List";
 
         if ($req->category) {
-            $title = "Posts in " . Category::firstWhere('id', $req->category)->name;
+            $title = "Posts in " . Category::firstWhere('id', $req->category)->name . " Category";
         } else if ($req->author) {
-            $title = "Posts by " . User::firstWhere('username', $req->author)->username;
+            $title = "Posts by " . User::firstWhere('username', $req->author)->name;
         }
 
         return view('frontend.posts.index', [
