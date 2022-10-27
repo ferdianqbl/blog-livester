@@ -11,7 +11,7 @@
             @if ($post->image)
               <img src="/storage/{{ $post->image }}" alt="{{ $post->title }}-img" class="img-fluid detail-post-img">
             @else
-              <img src="/images/details/detail-img.png" alt="{{ $post->title }}-img" class="img-fluid detail-post-img">
+              <img src="/images/detail/detail-img.png" alt="{{ $post->title }}-img" class="img-fluid detail-post-img">
             @endif
           </div>
         </div>

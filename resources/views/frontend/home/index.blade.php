@@ -16,7 +16,7 @@
 
             @if ($posts->count())
               <div class="big-content-card-hero mb-5">
-                @if ($post[0]->image)
+                @if ($posts[0]->image)
                   <img src="/storage/{{ $posts[0]->image }}" alt="" class="img-fluid">
                 @else
                   <img src="/images/home/big-content.png" alt="" class="img-fluid">
@@ -72,7 +72,7 @@
                   <div class="sub-content-card mb-5">
                     <div class="row align-items-start">
                       <div class="col-4">
-                        @if ($post[$i]->image)
+                        @if ($posts[$i]->image)
                           <img src="/storage/{{ $posts[$i]->image }}" alt=""
                             class="img-fluid sub-content-card-img">
                         @else
@@ -179,7 +179,7 @@
               <div class="col">
                 <div class="card h-100 card-post">
 
-                  @if ($post[$i]->image)
+                  @if ($posts[$i]->image)
                     <img src="/storage/{{ $posts[$i]->image }}" alt="" class="card-post-img img-fluid">
                   @else
                     <img src="/images/home/sub-content (3).png" alt="card-post" class="card-post-img img-fluid">
@@ -274,7 +274,7 @@
           @if ($i < 4)
             <div class="col">
               <div class="card h-100 card-post">
-                @if ($post[$i]->image)
+                @if ($posts[$i]->image)
                   <img src="/storage/{{ $posts[$i]->image }}" alt="" class="card-post-img img-fluid">
                 @else
                   <img src="/images/home/sub-content (3).png" alt="card-post" class="card-post-img img-fluid">

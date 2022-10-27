@@ -4,6 +4,12 @@
   <div class="author" id="author">
     <section class="author-selection" id="author-selection">
       <div class="container">
+        <h2 class="author-title">All Authors</h2>
+        <div class="row justify-content-center my-5">
+          <div class="col-12">
+            {{ $authors->links() }}
+          </div>
+        </div>
         <div class="row align-items-center row-cols-2 row-cols-lg-3 g-4">
 
           @if ($authors->count())

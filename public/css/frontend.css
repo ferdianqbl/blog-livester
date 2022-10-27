@@ -85,7 +85,7 @@ a.btn-custom-primary:hover {
 }
 .card-post img.card-post-img {
   width: 100%;
-  height: 100%;
+  height: 182.76px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
@@ -231,6 +231,9 @@ footer p.footer-cop {
 }
 .home#home section.hero#hero .big-content-card-hero img {
   border-radius: 10px;
+  max-height: 338px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .home#home section.hero#hero .big-content-card-hero .big-content-card-hero-body {
   margin-top: 1rem;
@@ -273,6 +276,9 @@ footer p.footer-cop {
 }
 .home#home section.hero#hero .sub-content-card img.sub-content-card-img {
   border-radius: 10px;
+  max-height: 154px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .home#home section.hero#hero .sub-content-card p.sub-content-card-author {
   font-weight: 400;
@@ -318,6 +324,15 @@ footer p.footer-cop {
 .author#author section.author-selection#author-selection {
   padding-top: 8rem;
   padding-bottom: 5rem;
+}
+.author#author section.author-selection#author-selection h2.author-title {
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3.375rem;
+  color: #001339;
+  margin-bottom: 2.5rem;
 }
 
 .category#category section.category-selection#category-selection {
@@ -385,6 +400,9 @@ footer p.footer-cop {
   border-radius: 10px;
   margin-bottom: 3rem;
   box-shadow: 0px 0px 50px rgba(9, 0, 78, 0.4);
+  max-height: 527px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .detail-post#detail-post section.detail-post-content#detail-post-content p.detail-post-author {
   color: rgba(170, 187, 170, 0.7333333333);

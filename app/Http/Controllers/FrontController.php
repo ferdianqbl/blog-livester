@@ -21,7 +21,7 @@ class FrontController extends Controller
     {
         return view('frontend.author.index', [
             'title' => 'Author',
-            'authors' => User::all(),
+            'authors' => User::latest()->paginate(8)->withQueryString(),
         ]);
     }
 
