@@ -297,6 +297,11 @@ footer p.footer-cop {
   padding-bottom: 5rem;
 }
 
+.author#author section.author-selection#author-selection {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
 .category#category section.category-selection#category-selection {
   padding-top: 8rem;
   padding-bottom: 5rem;
@@ -329,4 +334,16 @@ footer p.footer-cop {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.posts#posts section.posts-list#posts-list {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+.posts#posts section.posts-list#posts-list h2.posts-list-title {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3.375rem;
+  color: #001339;
+  margin-bottom: 2.5rem;
 }/*# sourceMappingURL=frontend.css.map */

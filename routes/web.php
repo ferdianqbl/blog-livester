@@ -39,6 +39,12 @@ Route::get('/category', function () {
     ]);
 });
 
+Route::get('/posts', function () {
+    return view('frontend.posts.index', [
+        'title' => 'Posts'
+    ]);
+});
+
 Route::get('/login', [UserController::class, 'loginView'])->name('login')->middleware('guest');
 Route::get('/register', [UserController::class, 'registerView'])->middleware('guest');
 

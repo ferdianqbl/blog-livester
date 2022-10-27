@@ -384,6 +384,12 @@ footer {
   }
 }
 
+.author#author {
+  section.author-selection#author-selection {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+  }
+}
 
 // ========== CATEGORY ==========
 .category#category {
@@ -422,6 +428,22 @@ footer {
       left: 0;
       right: 0;
       bottom: 0;
+    }
+  }
+}
+
+// ========== POSTS ==========
+.posts#posts {
+  section.posts-list#posts-list {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+
+    h2.posts-list-title {
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 3.375rem;
+      color: #001339;
+      margin-bottom: 2.5rem;
     }
   }
 }

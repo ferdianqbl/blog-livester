@@ -18,6 +18,9 @@
         <li class="nav-item">
           <a class="nav-link{{Request::is('category') ? ' active' : '' }}" href="/category">Category</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link{{Request::is('posts') ? ' active' : '' }}" href="/posts">Posts</a>
+        </li>
         <li class="nav-item d-block d-lg-none">
           <a class="btn-custom-primary d-inline-block d-lg-none" href="/login">
             Login
