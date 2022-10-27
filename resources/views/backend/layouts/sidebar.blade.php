@@ -3,13 +3,13 @@
     <div class="sb-sidenav-menu">
       <div class="nav">
         <div class="sb-sidenav-menu-heading">Core</div>
-        <a class="nav-link" href="/admin">
+        <a class="nav-link" href="/editor">
           <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
           Dashboard
         </a>
 
         <div class="sb-sidenav-menu-heading">Content</div>
-        <a class="nav-link" href="/admin/post">
+        <a class="nav-link" href="/editor/post">
           <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
           Posts
         </a>

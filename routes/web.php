@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,24 +38,26 @@ Route::get('/category', function () {
     ]);
 });
 
-Route::get('/login', function () {
-    return view('login.index');
-});
-
-Route::get('/register', function () {
-    return view('register.index');
-});
+Route::get('/login', [UserController::class, 'loginView'])->middleware('guest');
+Route::get('/register', [UserController::class, 'registerView'])->middleware('guest');
 
 
 // ======== BACKEND ========
-Route::get('/admin', function () {
+Route::post('/login', [UserController::class, 'loginAuthentication']);
+
+Route::post('/register', [UserController::class, 'registerStore']);
+
+Route::post('/logout', [UserController::class, 'logout']);
+
+
+Route::get('/editor', function () {
     return view('backend.dashboard.index', [
         'title' => 'Dashboard'
     ]);
-});
+})->middleware('auth')->name('dashboard');
 
-Route::get('/admin/post', function () {
+Route::get('/editor/post', function () {
     return view('backend.posts.index', [
         'title' => 'Posts'
     ]);
-});
+})->middleware('auth');

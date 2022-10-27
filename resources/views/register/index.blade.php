@@ -16,7 +16,7 @@
     <div class="row justify-content-center align-items-center">
       <div class="col-10 col-sm-8 col-lg-5 form-box">
         <h2 class="text-center mb-5">Register</h2>
-        <form method="POST" action="" autocomplete="off">
+        <form method="POST" action="/admin/register" autocomplete="off">
           @csrf
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
@@ -58,7 +58,9 @@
           <button type="submit" class="w-100 btn btn-lg btn-success mt-4">Register</button>
         </form>
 
-        <p class="login-text text-center mt-3 text-secondary">Already registered? <a href="/login">Login Now!</a></p>
+        <p class="login-text text-center mt-3 text-secondary">Already registered? <a href="/login">Login
+            Now!</a>
+        </p>
       </div>
     </div>
   </div>
