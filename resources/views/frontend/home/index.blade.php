@@ -16,8 +16,11 @@
 
             @if ($posts->count())
               <div class="big-content-card-hero mb-5">
-                <img src="/storage/{{ $posts[0]->image }}" alt="" class="img-fluid">
-
+                @if ($post[0]->image)
+                  <img src="/storage/{{ $posts[0]->image }}" alt="" class="img-fluid">
+                @else
+                  <img src="/images/home/big-content.png" alt="" class="img-fluid">
+                @endif
                 <div class="big-content-card-hero-body">
                   <p class="big-content-card-author">
                     {{ $posts[0]->user->username }} | {{ $posts[0]->created_at->diffForHumans() }}
@@ -69,7 +72,12 @@
                   <div class="sub-content-card mb-5">
                     <div class="row align-items-start">
                       <div class="col-4">
-                        <img src="/storage/{{ $posts[$i]->image }}" alt="" class="img-fluid sub-content-card-img">
+                        @if ($post[$i]->image)
+                          <img src="/storage/{{ $posts[$i]->image }}" alt=""
+                            class="img-fluid sub-content-card-img">
+                        @else
+                          <img src="/images/home/sub-content.png" alt="" class="img-fluid sub-content-card-img">
+                        @endif
                       </div>
                       <div class="col-8">
                         <p class="sub-content-card-author">
@@ -170,8 +178,12 @@
             @if ($i < 4)
               <div class="col">
                 <div class="card h-100 card-post">
-                  <img src="/images/home/sub-content (3).png" alt="card-post" class="card-post-img img-fluid">
 
+                  @if ($post[$i]->image)
+                    <img src="/storage/{{ $posts[$i]->image }}" alt="" class="card-post-img img-fluid">
+                  @else
+                    <img src="/images/home/sub-content (3).png" alt="card-post" class="card-post-img img-fluid">
+                  @endif
                   <div class="card-post-body">
                     <p class="card-post-author">{{ $posts[0]->user->username }} |
                       {{ $posts[$i]->created_at->diffForHumans() }}</p>
@@ -262,7 +274,11 @@
           @if ($i < 4)
             <div class="col">
               <div class="card h-100 card-post">
-                <img src="/images/home/sub-content (3).png" alt="card-post" class="card-post-img img-fluid">
+                @if ($post[$i]->image)
+                  <img src="/storage/{{ $posts[$i]->image }}" alt="" class="card-post-img img-fluid">
+                @else
+                  <img src="/images/home/sub-content (3).png" alt="card-post" class="card-post-img img-fluid">
+                @endif
 
                 <div class="card-post-body">
                   <p class="card-post-author">{{ $posts[0]->user->username }} |

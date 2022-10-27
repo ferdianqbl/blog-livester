@@ -5,6 +5,25 @@
     <section class="posts-list" id="posts-list">
       <div class="container">
         <h2 class="posts-list-title">Posts List</h2>
+
+        <div class="row justify-content-center mb-5">
+          <div class="col-6">
+            <form action="/posts">
+              @if (request('category'))
+                <input type="hidden" name="category" value="{{ request('category') }}">
+              @endif
+              @if (request('author'))
+                <input type="hidden" name="author" value="{{ request('author') }}">
+              @endif
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" name="search"
+                  value="{{ request('search') }}">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
         <div class="row justify-content-center">
           <div class="col-12">
             {{ $posts->links() }}
@@ -15,8 +34,12 @@
             @foreach ($posts as $post)
               <div class="col">
                 <div class="card h-100 card-post">
-                  <img src="/storage/{{ $post->image }}" alt="card-post" class="card-post-img img-fluid">
 
+                  @if ($post->image)
+                    <img src="/storage/{{ $post->image }}" alt="card-post" class="card-post-img img-fluid">
+                  @else
+                    <img src="/images/home/sub-content.png" alt="{{ $post->title }}-img" class="card-post-img img-fluid">
+                  @endif
                   <div class="card-post-body">
                     <p class="card-post-author">{{ $post->user->username }} | {{ $post->created_at->diffForHumans() }}</p>
                     <a href="/"
