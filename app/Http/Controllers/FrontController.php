@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+use App\Models\Post;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
@@ -9,27 +12,30 @@ class FrontController extends Controller
     public function homePage()
     {
         return view('frontend.home.index', [
-            'title' => 'Home'
+            'title' => 'Home',
+            'posts' => Post::latest()->get(),
         ]);
     }
 
     public function authorPage()
     {
         return view('frontend.author.index', [
-            'title' => 'Author'
+            'title' => 'Author',
+            'authors' => User::all(),
         ]);
     }
 
     public function categoryPage()
     {
         return view('frontend.category.index', [
-            'title' => 'Category'
+            'title' => 'Category',
         ]);
     }
     public function postsPage()
     {
         return view('frontend.posts.index', [
-            'title' => 'Posts'
+            'title' => 'Posts',
+            'posts' => Post::latest()->get(),
         ]);
     }
 }

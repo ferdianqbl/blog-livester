@@ -15,6 +15,8 @@ $web : #E300E8;
 $mobile : #AD00FF;
 $design : #FA9600;
 $ai : #00C608;
+$data : #0055ff;
+$tech : #00ECFF;
 
 body {
   font-family: $font-family;
@@ -74,6 +76,27 @@ a.btn-custom-primary {
     color: $ai;
   }
 }
+
+.data-color {
+  background: #FFFFFF;
+  border: 1px solid $data;
+  color: $data;
+
+  &:hover {
+    color: $data;
+  }
+}
+
+.tech-color {
+  background: #FFFFFF;
+  border: 1px solid $tech;
+  color: $tech;
+
+  &:hover {
+    color: $tech;
+  }
+}
+
 
 // == CARD ==
 

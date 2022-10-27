@@ -54,6 +54,24 @@ a.btn-custom-primary:hover {
   color: #00C608;
 }
 
+.data-color {
+  background: #FFFFFF;
+  border: 1px solid #0055ff;
+  color: #0055ff;
+}
+.data-color:hover {
+  color: #0055ff;
+}
+
+.tech-color {
+  background: #FFFFFF;
+  border: 1px solid #00ECFF;
+  color: #00ECFF;
+}
+.tech-color:hover {
+  color: #00ECFF;
+}
+
 .card-post {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
