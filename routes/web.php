@@ -30,6 +30,8 @@ Route::get('/category', [FrontController::class, 'categoryPage']);
 
 Route::get('/posts', [FrontController::class, 'postsPage']);
 
+Route::get('/posts/{post}', [FrontController::class, 'detailPostPage']);
+
 Route::get('/login', [UserController::class, 'loginView'])->name('login')->middleware('guest');
 Route::get('/register', [UserController::class, 'registerView'])->middleware('guest');
 

@@ -32,7 +32,8 @@
                   <p class="big-content-card-text">
                     {{ $posts[0]->summary }}
                   </p>
-                  <a href="#" class="nav-link big-content-card-link">Read More <i class="bi bi-arrow-right"></i></a>
+                  <a href="/posts/{{ $posts[0]->id }}" class="nav-link big-content-card-link">Read More <i
+                      class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             @else
@@ -79,7 +80,7 @@
                           {{ Str::upper($posts[$i]->category->name) }}
                         </a>
                         <p class="sub-content-card-title">{{ $posts[$i]->title }}</p>
-                        <a href="#" class="nav-link sub-content-card-link">Read More <i
+                        <a href="/posts/{{ $posts[$i]->id }}" class="nav-link sub-content-card-link">Read More <i
                             class="bi bi-arrow-right"></i></a>
                       </div>
                     </div>
@@ -178,7 +179,8 @@
                       class="nav-link card-post-category {{ Str::lower($posts[$i]->category->name) }}-color">{{ Str::upper($posts[$i]->category->name) }}</a>
                     <p class="card-post-title">{{ $posts[$i]->title }}</p>
                     <p class="card-post-text">{{ $posts[$i]->summary }}</p>
-                    <a href="#" class="nav-link card-post-link">Read More <i class="bi bi-arrow-right"></i></a>
+                    <a href="/posts/{{ $posts[$i]->id }}" class="nav-link card-post-link">Read More <i
+                        class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -269,7 +271,8 @@
                     class="nav-link card-post-category {{ Str::lower($posts[$i]->category->name) }}-color">{{ Str::upper($posts[$i]->category->name) }}</a>
                   <p class="card-post-title">{{ $posts[$i]->title }}</p>
                   <p class="card-post-text">{{ $posts[$i]->summary }}</p>
-                  <a href="#" class="nav-link card-post-link">Read More <i class="bi bi-arrow-right"></i></a>
+                  <a href="/posts/{{ $posts[$i]->id }}" class="nav-link card-post-link">Read More <i
+                      class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </div>

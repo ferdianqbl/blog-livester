@@ -359,9 +359,58 @@ footer p.footer-cop {
   padding-bottom: 5rem;
 }
 .posts#posts section.posts-list#posts-list h2.posts-list-title {
+  padding: 0;
+  margin: 0;
   font-weight: 600;
   font-size: 2rem;
   line-height: 3.375rem;
   color: #001339;
   margin-bottom: 2.5rem;
+}
+
+.detail-post#detail-post section.detail-post-content#detail-post-content {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+.detail-post#detail-post section.detail-post-content#detail-post-content h2.detail-post-title {
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3.375rem;
+  color: #001339;
+  margin-bottom: 2.5rem;
+}
+.detail-post#detail-post section.detail-post-content#detail-post-content img.detail-post-img {
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  box-shadow: 0px 0px 50px rgba(9, 0, 78, 0.4);
+}
+.detail-post#detail-post section.detail-post-content#detail-post-content p.detail-post-author {
+  color: rgba(170, 187, 170, 0.7333333333);
+}
+.detail-post#detail-post section.detail-post-content#detail-post-content p.detail-post-title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  color: #001339;
+}
+.detail-post#detail-post section.detail-post-content#detail-post-content p.detail-post-category {
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+  display: inline-block;
+  border-radius: 183px;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.detail-post#detail-post section.detail-post-content#detail-post-content p.detail-post-category:hover {
+  opacity: 0.8;
+}
+.detail-post#detail-post section.detail-post-content#detail-post-content .detail-post-body {
+  color: #a0a0a0;
 }/*# sourceMappingURL=frontend.css.map */

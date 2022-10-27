@@ -19,7 +19,8 @@
                       class="nav-link card-post-category {{ Str::lower($post->category->name) }}-color">{{ Str::upper($post->category->name) }}</a>
                     <p class="card-post-title">{{ $post->title }}</p>
                     <p class="card-post-text">{{ $post->summary }}</p>
-                    <a href="#" class="nav-link card-post-link">Read More <i class="bi bi-arrow-right"></i></a>
+                    <a href="/posts/{{ $post->id }}" class="nav-link card-post-link">Read More <i
+                        class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>

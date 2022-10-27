@@ -38,4 +38,12 @@ class FrontController extends Controller
             'posts' => Post::latest()->get(),
         ]);
     }
+
+    public function detailPostPage(Post $post)
+    {
+        return view('frontend.details.index', [
+            'title' => 'Detail Post',
+            'post' => $post,
+        ]);
+    }
 }
