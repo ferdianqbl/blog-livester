@@ -35,7 +35,7 @@ class FrontController extends Controller
     {
         return view('frontend.posts.index', [
             'title' => 'Posts',
-            'posts' => Post::latest()->get(),
+            'posts' => Post::latest()->paginate(8)->withQueryString(),
         ]);
     }
 
