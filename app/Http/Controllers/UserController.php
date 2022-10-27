@@ -31,7 +31,7 @@ class UserController extends Controller
         }
 
         return back()->with([
-            'loginStatus' => 'Login failed!.',
+            'loginStatus' => 'Login failed!',
         ]);
     }
 

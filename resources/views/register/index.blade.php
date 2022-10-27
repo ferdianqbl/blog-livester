@@ -16,7 +16,7 @@
     <div class="row justify-content-center align-items-center">
       <div class="col-10 col-sm-8 col-lg-5 form-box">
         <h2 class="text-center mb-5">Register</h2>
-        <form method="POST" action="/admin/register" autocomplete="off">
+        <form method="POST" action="/register" autocomplete="off">
           @csrf
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>

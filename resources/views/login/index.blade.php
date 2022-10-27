@@ -15,38 +15,33 @@
   <div class="container">
     <div class="row justify-content-center align-items-center">
       <div class="col-10 col-sm-8 col-lg-5 form-box">
-        {{-- @if (session()->has('success') || session('loginStatus'))
-        <div class="alert {{session('loginStatus') ? 'alert-danger' : 'alert-success' }} alert-dismissible fade show"
+        @if (session()->has('success') || session('loginStatus') || $errors->any())
+        <div
+          class="alert {{session('loginStatus') || $errors->any() ? 'alert-danger' : 'alert-success' }} alert-dismissible fade show"
           role="alert">
-          {{ session('success')}} {{ session('loginStatus')}}
+
+          @if (session('loginStatus'))
+          {{ session('loginStatus') }}
+          @elseif ($errors->any())
+          Login failed!
+          @else
+          {{ session('success')}}
+          @endif
+
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
-        @endif --}}
+        @endif
 
         <h2 class="text-center mb-5">Login</h2>
-        <form method="POST" action="" autocomplete="off">
+        <form method="POST" action="/login" autocomplete="off">
           @csrf
           <div class="mb-3">
             <label for="username" class="form-label">Username</label>
-            <input type="text" class="form-control @error('username') is-invalid @enderror" id="username"
-              name="username" autofocus required>
-
-            @error('username')
-            <div class="invalid-feedback mb-3">
-              {{ $message }}
-            </div>
-            @enderror
+            <input type="text" class="form-control" id="username" name="username" autofocus required>
           </div>
           <div class="mb-3">
             <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control @error('password') is-invalid @enderror" id="password"
-              name="password" required>
-
-            @error('password')
-            <div class="invalid-feedback mb-3">
-              {{ $message }}
-            </div>
-            @enderror
+            <input type="password" class="form-control" id="password" name="password" required>
           </div>
           <button type="submit" class="w-100 btn btn-lg btn-success mt-4">Login</button>
         </form>

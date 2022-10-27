@@ -38,7 +38,7 @@ Route::get('/category', function () {
     ]);
 });
 
-Route::get('/login', [UserController::class, 'loginView'])->middleware('guest');
+Route::get('/login', [UserController::class, 'loginView'])->name('login')->middleware('guest');
 Route::get('/register', [UserController::class, 'registerView'])->middleware('guest');
 
 
@@ -54,10 +54,10 @@ Route::get('/editor', function () {
     return view('backend.dashboard.index', [
         'title' => 'Dashboard'
     ]);
-})->middleware('auth')->name('dashboard');
+})->name('dashboard')->middleware('auth');
 
-Route::get('/editor/post', function () {
-    return view('backend.posts.index', [
-        'title' => 'Posts'
-    ]);
-})->middleware('auth');
+// Route::resource('/editor/posts', function () {
+//     return view('backend.posts.index', [
+//         'title' => 'Posts'
+//     ]);
+// })->middleware('auth');
