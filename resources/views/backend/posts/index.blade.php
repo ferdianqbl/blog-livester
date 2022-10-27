@@ -12,7 +12,7 @@
 @endif
 
 <div class="table-responsive justify-content-center mx-auto">
-  <a href="/dashboard/posts/create" class="btn btn-primary mb-3"><span data-feather="plus"></span> Create New Post</a>
+  <a href="/editor/posts/create" class="btn btn-primary mb-3"><span data-feather="plus"></span> Create New Post</a>
 
   @if ($posts->count())
   <table class="table table-striped table-sm">

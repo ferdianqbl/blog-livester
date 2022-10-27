@@ -17,8 +17,7 @@
     </div>
     <div class="sb-sidenav-footer">
       <a class="nav-link text-white" href="/">
-        <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-        Back to home page
+        <i class="fas fa-tachometer-alt"></i> Back to home page
       </a>
     </div>
   </nav>

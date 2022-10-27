@@ -12,6 +12,15 @@
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
     <link href="/dashboard/css/dashboard.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+    {{-- TRIX EDITOR --}}
+    <link rel="stylesheet" type="text/css" href="/dashboard/css/trix.css">
+    <script type="text/javascript" src="/dashboard/js/trix.js" defer></script>
+    <style>
+        trix-toolbar [data-trix-button-group="file-tools"] {
+            display: none;
+        }
+    </style>
 </head>
 
 <body class="sb-nav-fixed">
