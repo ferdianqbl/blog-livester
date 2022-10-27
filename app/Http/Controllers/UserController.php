@@ -27,7 +27,7 @@ class UserController extends Controller
         if (Auth::attempt($validateData)) {
             $request->session()->regenerate();
 
-            return redirect()->intended('/');
+            return redirect('/');
         }
 
         return back()->with([
@@ -56,7 +56,7 @@ class UserController extends Controller
 
         User::create($validatedData);
 
-        return redirect('/login')->with('success', 'You have successfully registered!');
+        return redirect()->route('login')->with('success', 'You have successfully registered!');
     }
 
     public function logout(Request $request)

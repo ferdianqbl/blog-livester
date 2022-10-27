@@ -18,7 +18,7 @@ return new class extends Migration
             $table->foreignId('user_id')->nullable()->index('fk_posts_to_users');
             $table->foreignId('category_id')->nullable()->index('fk_posts_to_categories');
             $table->string('title');
-            $table->timestamp('published_at');
+            $table->text('summary');
             $table->text('image')->nullable();
             $table->text('body');
             $table->timestamps();

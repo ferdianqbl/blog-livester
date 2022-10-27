@@ -19,6 +19,19 @@
       @enderror
     </div>
     <div class="mb-3">
+      <label for="summary" class="form-label">Summary</label>
+      <input type="text" class="form-control @error('summary') is-invalid @enderror" id="summary" name="summary"
+        autofocus required value="{{old('summary')}}">
+
+      @error('summary')
+      <div class="invalid-feedback mb-3">
+        {{ $message }}
+      </div>
+      @enderror
+
+      <small>max 255 character</small>
+    </div>
+    <div class="mb-3">
       <label for="category" class="form-label">Category</label>
       <select class="form-select" name="category_id">
         @foreach ($categories as $category)

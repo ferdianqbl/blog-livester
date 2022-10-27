@@ -29,6 +29,7 @@ class PostController extends Controller
     {
         $validatedData = $request->validate([
             'title' => 'required|min:3|max:255',
+            'summary' => 'required|min:3|max:255',
             'category_id' => ['required', 'exists:categories,id'],
             'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:1024',
             'body' => ['required', 'min:3'],
@@ -62,6 +63,7 @@ class PostController extends Controller
     {
         $rules = [
             'title' => 'required|min:3|max:255',
+            'summary' => 'required|min:3|max:255',
             'category_id' => ['required', 'exists:categories,id'],
             'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:1024',
             'body' => ['required', 'min:3'],
