@@ -17,9 +17,9 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id');
             $table->foreignId('category_id');
-            $table->text('image')->nullable();
-            $table->timestamp('published_at');
             $table->string('title');
+            $table->timestamp('published_at');
+            $table->text('image')->nullable();
             $table->text('body');
             $table->timestamps();
         });
