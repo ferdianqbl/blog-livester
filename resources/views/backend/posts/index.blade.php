@@ -6,8 +6,10 @@
 </div>
 
 @if (session('success') && session('success') != '' && session()->has('success'))
-<div class="alert alert-success" role="alert">
+<div class="alert alert-success alert-dismissible fade show" role="alert">
   {{ session('success') }}
+
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 @endif
 
@@ -30,16 +32,16 @@
       <tr>
         <td>{{$loop->iteration}}</td>
         <td>{{$post->title}}</td>
-        <td>{{$post->category->category_name}}</td>
+        <td>{{$post->category->name}}</td>
         <td>{{$post->created_at}}</td>
         <td>
-          <a href="" class="badge bg-info"><span data-feather="zoom-in"></span></a>
-          <a href="" class="badge bg-success"><span data-feather="edit"></span></a>
-          <form action="" method="POST" class="d-inline">
+          <a href="/editor/posts/{{$post->id}}/edit" class="btn btn-success badge bg-success d-inline"><i
+              class="bi bi-pencil-square"></i></a>
+          <form action="/editor/posts/{{$post->id}}" method="POST" class="d-inline-block">
             @csrf
             @method('DELETE')
-            <button type="submit" class="badge bg-danger d-inline border-0"
-              onclick="return confirm('Are you sure?')"><span data-feather="trash-2"></span></button>
+            <button type="submit" class="btn btn-success badge bg-danger d-inline border-0"
+              onclick="return confirm('Are you sure?')"><i class="bi bi-trash3"></i></button>
           </form>
         </td>
       </tr>
