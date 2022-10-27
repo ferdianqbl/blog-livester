@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FrontController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -21,29 +22,13 @@ use Illuminate\Support\Facades\Route;
 
 // ======== FRONTEND ========
 
-Route::get('/', function () {
-    return view('frontend.home.index', [
-        'title' => 'Home'
-    ]);
-});
+Route::get('/', [FrontController::class, 'homePage']);
 
-Route::get('/author', function () {
-    return view('frontend.author.index', [
-        'title' => 'Author'
-    ]);
-});
+Route::get('/author', [FrontController::class, 'authorPage']);
 
-Route::get('/category', function () {
-    return view('frontend.category.index', [
-        'title' => 'Category'
-    ]);
-});
+Route::get('/category', [FrontController::class, 'categoryPage']);
 
-Route::get('/posts', function () {
-    return view('frontend.posts.index', [
-        'title' => 'Posts'
-    ]);
-});
+Route::get('/posts', [FrontController::class, 'postsPage']);
 
 Route::get('/login', [UserController::class, 'loginView'])->name('login')->middleware('guest');
 Route::get('/register', [UserController::class, 'registerView'])->middleware('guest');
