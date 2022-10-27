@@ -45,7 +45,7 @@ class PostController extends Controller
 
     public function show(Post $post)
     {
-        //
+        //  
     }
 
 
@@ -60,7 +60,26 @@ class PostController extends Controller
 
     public function update(Request $request, Post $post)
     {
-        //
+        $rules = [
+            'title' => 'required|min:3|max:255',
+            'category_id' => ['required', 'exists:categories,id'],
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:1024',
+            'body' => ['required', 'min:3'],
+        ];
+
+        // validasi
+        $validatedData = $request->validate($rules);
+
+        if ($request->file('image')) {
+            if ($post->image) Storage::delete($post->image);
+            $validatedData['image'] = $request->file('image')->store('post-images');
+        }
+
+        $validatedData['user_id'] = auth()->user()->id;
+
+        Post::where('id', $post->id)->update($validatedData);
+
+        return redirect('editor/posts')->with("success", "Post Edited successfully");
     }
 
     public function destroy(Post $post)
