@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id');
-            $table->foreignId('category_id');
+            $table->foreignId('user_id')->nullable()->index('fk_posts_to_users');
+            $table->foreignId('category_id')->nullable()->index('fk_posts_to_categories');
             $table->string('title');
             $table->timestamp('published_at');
             $table->text('image')->nullable();
